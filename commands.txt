@@ -1,0 +1,13 @@
+git config --global user.name DRILLE-BAIANO
+git config --global user.emaill duduzimhard@gmail.com
+
+dotnet new sln --name KBStore
+dotnet new mvc -o KBStore
+dotnet sln add KBStore\KBStore.csproj
+
+cd KBStore
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
+dotnet add package MySql.EntityFrameworkCore --version 9.0.0
