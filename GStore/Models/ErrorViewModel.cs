@@ -1,4 +1,4 @@
-namespace KBStore.Models;
+namespace GStore.Models;
 
 public class ErrorViewModel
 {

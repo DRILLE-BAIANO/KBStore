@@ -1,13 +1,29 @@
 git config --global user.name DRILLE-BAIANO
-git config --global user.emaill duduzimhard@gmail.com
+git config --global user.email duduzimhard@gmail.com
 
-dotnet new sln --name KBStore
-dotnet new mvc -o KBStore
-dotnet sln add KBStore\KBStore.csproj
+dotnet new sln --name GStore
+dotnet new mvc -o GStore
+dotnet sln add GStore\GStore.csproj
 
-cd KBStore
+cd GStore
+
 dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
 dotnet add package MySql.EntityFrameworkCore --version 9.0.0
+
+Arquivo .csproj
+<Nullable>disable</Nullable>
+
+Models\ErrorViewModel
+tirar o ?
+
+Criar a camada de dados (Models)
+
+Criar a classe de Contexto na pasta Data
+
+Configurar a ConnectionString no appsettings.json
+
+Adicionar os serviços de Contexto e Identity no Program.cs
+

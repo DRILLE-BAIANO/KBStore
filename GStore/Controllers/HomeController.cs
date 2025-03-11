@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using KBStore.Models;
+using GStore.Models;
 
-namespace KBStore.Controllers;
+namespace GStore.Controllers;
 
 public class HomeController : Controller
 {

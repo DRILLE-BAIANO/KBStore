@@ -1,24 +1,24 @@
-using KBStore.Models;
+using GStore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace KBStore.Data;
+namespace GStore.Data;
 
 public class AppDbSeed
 {
     public AppDbSeed(ModelBuilder builder)
     {
         List<Categoria> categorias = new() {
-            new Categoria { Id = 1, Name = "Smartphones" },
-            new Categoria { Id = 2, Name = "Notebooks" },
-            new Categoria { Id = 3, Name = "Smartwatches" },
-            new Categoria { Id = 4, Name = "Fones de Ouvido" },
-            new Categoria { Id = 5, Name = "Monitores" },
-            new Categoria { Id = 6, Name = "Teclados e Mouses" },
-            new Categoria { Id = 7, Name = "Consoles" },
-            new Categoria { Id = 8, Name = "Action Figures" },
-            new Categoria { Id = 9, Name = "Drones" },
-            new Categoria { Id = 10, Name = "Câmeras Digitais" }
+            new Categoria { Id = 1, Nome = "Smartphones" },
+            new Categoria { Id = 2, Nome = "Notebooks" },
+            new Categoria { Id = 3, Nome = "Smartwatches" },
+            new Categoria { Id = 4, Nome = "Fones de Ouvido" },
+            new Categoria { Id = 5, Nome = "Monitores" },
+            new Categoria { Id = 6, Nome = "Teclados e Mouses" },
+            new Categoria { Id = 7, Nome = "Consoles" },
+            new Categoria { Id = 8, Nome = "Action Figures" },
+            new Categoria { Id = 9, Nome = "Drones" },
+            new Categoria { Id = 10, Nome = "Câmeras Digitais" }
         };
         builder.Entity<Categoria>().HasData(categorias);
 
@@ -181,13 +181,13 @@ public class AppDbSeed
         List<Usuario> usuarios = new() {
             new Usuario(){
                 Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
-                Email = "gallojunior@gmail.com",
-                NormalizedEmail = "GALLOJUNIOR@GMAIL.COM",
-                UserName = "GalloJunior",
-                NormalizedUserName = "GALLOJUNIOR",
+                Email = "duduzimhard@gmail.com",
+                NormalizedEmail = "DUDUZIMHARD@GMAIL.COM",
+                UserName = "Eduardo Henrique",
+                NormalizedUserName = "EDUARDO HENRIQUE",
                 LockoutEnabled = true,
                 EmailConfirmed = true,
-                Nome = "José Antonio Gallo Junior",
+                Nome = "Eduardo Henrique Santos Silva",
                 DataNascimento = DateTime.Parse("05/08/1981"),
                 Foto = "/img/usuarios/ddf093a6-6cb5-4ff7-9a64-83da34aee005.png"
             }
