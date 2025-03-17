@@ -1,4 +1,4 @@
-namespace GStore.Models;
+namespace GsStore.Models;
 
 public class ErrorViewModel
 {

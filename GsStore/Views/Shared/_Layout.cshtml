@@ -1,22 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>KBStore</title>
+    <title>Shop Homepage - Start Bootstrap Template</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/site.css" rel="stylesheet" />
-
-    @await RenderSectionAsync("Scripts", required: false)
-
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css">
+    @await RenderSectionAsync("Styles", required: false)
 </head>
 
 <body>
@@ -56,7 +54,7 @@
     </nav>
 
     @RenderBody()
-
+    <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>

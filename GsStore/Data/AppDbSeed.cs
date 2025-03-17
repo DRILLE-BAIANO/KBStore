@@ -1,8 +1,8 @@
-using GStore.Models;
+using GsStore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace GStore.Data;
+namespace GsStore.Data;
 
 public class AppDbSeed
 {
@@ -181,13 +181,13 @@ public class AppDbSeed
         List<Usuario> usuarios = new() {
             new Usuario(){
                 Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
-                Email = "duduzimhard@gmail.com",
-                NormalizedEmail = "DUDUZIMHARD@GMAIL.COM",
-                UserName = "Eduardo Henrique",
-                NormalizedUserName = "EDUARDO HENRIQUE",
+                Email = "gallojunior@gmail.com",
+                NormalizedEmail = "GALLOJUNIOR@GMAIL.COM",
+                UserName = "GalloJunior",
+                NormalizedUserName = "GALLOJUNIOR",
                 LockoutEnabled = true,
                 EmailConfirmed = true,
-                Nome = "Eduardo Henrique Santos Silva",
+                Nome = "José Antonio Gallo Junior",
                 DataNascimento = DateTime.Parse("05/08/1981"),
                 Foto = "/img/usuarios/ddf093a6-6cb5-4ff7-9a64-83da34aee005.png"
             }
