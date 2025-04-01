@@ -20,10 +20,23 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<Produto> produtos = _db.Produtos
+        Produto produtos = _db.Produtos
            .Where(p => p.Destaque)
            .Include(p => p.Fotos)
+           .Include(p => p.Categoria)
            .ToList();
+
+        List<Produto> semelhantes = _db.Produtos
+            .Where(p => p.CategoriaId == produtos.CategoriaId && p.Id != id)
+            .Include(p => p.Fotos)
+            .Take(4)
+            .ToList();
+
+        ProdutoVM produtoVM = new()
+        {
+            produto = produtos,
+            Semelhantes = semelhantes
+        }
         return View(produtos);
     }
 
